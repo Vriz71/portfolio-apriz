@@ -92,7 +92,7 @@ export default function Home() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-base md:text-lg font-semibold leading-relaxed max-w-xl"
               >
-                Hi, I'm Aprizal, a <span className="text-blue-500 dark:text-blue-400">System Analyst</span>.
+                Hi, I&apos;m Aprizal, a <span className="text-blue-500 dark:text-blue-400">System Analyst</span>.
               </motion.p>
 
               <motion.p
@@ -126,7 +126,7 @@ export default function Home() {
           </div>
         </motion.section>
 
-        {/*  PROJECTS  */} {/* Tinggal isi project */}
+        {/*  PROJECTS  */}
         <motion.section
           id="projects"
           initial={{ opacity: 0, y: 40 }}
@@ -299,7 +299,6 @@ export default function Home() {
                     )
                   })}
                 </div>
-                {/* SAMA STRUKTURNYA */}
               </motion.div>
 
               {/* SRS */}
@@ -379,7 +378,6 @@ export default function Home() {
                     )
                   })}
                 </div>
-                {/* SAMA STRUKTURNYA */}
               </motion.div>
 
             </div>
@@ -511,7 +509,6 @@ export default function Home() {
                     >
                       <div className="rounded-xl overflow-hidden bg-white dark:bg-neutral-900 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-emerald-400 group-hover:via-teal-400 group-hover:to-blue-500 group-hover:text-white">
 
-                        {/* Preview Image */}
                         <div className="h-36 overflow-hidden">
                           <img
                             src={cert.image}
@@ -560,42 +557,41 @@ export default function Home() {
               Let’s build something impactful together.
             </p>
 
-            {/* CTA WhatsApp */}
-            <a
+            <Link
               href="https://wa.me/6285779411644"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mb-12 rounded-lg bg-gradient-to-r from-emerald-400 via-teal-400 to-blue-500 px-8 py-3 font-semibold text-white transition-all duration-300 hover:scale-105"
             >
               Contact Me on WhatsApp
-            </a>
+            </Link>
 
             {/* Social Links */}
             <div className="flex justify-center gap-6 text-sm md:text-base font-medium">
-              <a
+              <Link
                 href="https://linkedin.com/in/aprizal-safarudin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-emerald-500 transition-colors"
               >
                 LinkedIn
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href="https://github.com/Vriz71"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-emerald-500 transition-colors"
               >
                 GitHub
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href="mailto:aprizalsafar10@gmail.com"
                 className="hover:text-emerald-500 transition-colors"
               >
                 Email
-              </a>
+              </Link>
             </div>
 
           </div>
@@ -609,7 +605,6 @@ export default function Home() {
 
       </main>
 
-      {/* Scroll To Top */}
       {showButton && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
