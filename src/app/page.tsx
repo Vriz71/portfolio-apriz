@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Nav from "./components/nav";
+import Image from "next/image";
 
 export default function Home() {
   const [showButton, setShowButton] = useState(false);
@@ -119,7 +120,7 @@ export default function Home() {
               className="flex justify-center md:justify-end"
             >
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-xl">
-                <img src="/pp.jpeg" alt="Profile" className="w-full h-full object-cover" />
+                <Image src="/pp.jpeg" alt="Profile" className="w-full h-full object-cover" width={320} height={320} />
               </div>
             </motion.div>
 
@@ -169,10 +170,12 @@ export default function Home() {
 
                           {/* IMAGE */}
                           <div className="aspect-video relative overflow-hidden">
-                            <img
+                            <Image
                               src={project.images[idx]}
                               alt={project.title}
                               className="w-full h-full object-contain"
+                              width={400}
+                              height={225}
                             />
 
                             {project.images.length > 1 && (
@@ -244,10 +247,12 @@ export default function Home() {
 
                           {/* IMAGE */}
                           <div className="aspect-video relative overflow-hidden">
-                            <img
+                            <Image
                               src={project.images[idx]}
                               alt={project.title}
                               className="w-full h-full object-contain"
+                              width={400}
+                              height={225}
                             />
 
                             {project.images.length > 1 && (
@@ -323,10 +328,12 @@ export default function Home() {
 
                           {/* IMAGE */}
                           <div className="aspect-video relative overflow-hidden">
-                            <img
+                            <Image
                               src={project.images[idx]}
                               alt={project.title}
                               className="w-full h-full object-contain"
+                              width={400}
+                              height={225}
                             />
 
                             {project.images.length > 1 && (
@@ -510,10 +517,12 @@ export default function Home() {
                       <div className="rounded-xl overflow-hidden bg-white dark:bg-neutral-900 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-emerald-400 group-hover:via-teal-400 group-hover:to-blue-500 group-hover:text-white">
 
                         <div className="h-36 overflow-hidden">
-                          <img
+                          <Image
                             src={cert.image}
                             alt={cert.title}
                             className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+                            width={400}
+                            height={225}
                           />
                         </div>
 
