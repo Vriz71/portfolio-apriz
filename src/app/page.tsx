@@ -558,12 +558,12 @@ export default function Home() {
 
             {/* Heading */}
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Let’s Work Together
+              Let&apos;s Work Together
             </h2>
 
             <p className="text-base md:text-lg opacity-70 mb-10">
-              I'm open to collaboration, freelance projects, or full-time opportunities.
-              Let’s build something impactful together.
+              I&apos;m open to collaboration, freelance projects, or full-time opportunities.
+              Let&apos;s build something impactful together.
             </p>
 
             <Link
