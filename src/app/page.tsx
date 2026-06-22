@@ -26,6 +26,12 @@ export default function Home() {
         images: ["/projects/beranda.jpeg"],
         link: "https://ra-raihan.online",
       },
+      {
+        title: "Personal Portfolio Website",
+        desc: "Built a client portfolio website.",
+        images: ["/projects/web_salman.png"],
+        link: "https://portfolio-salman-zeta.vercel.app/",
+      },
     ],
     uix: [
       {
