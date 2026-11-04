@@ -32,6 +32,12 @@ export default function Home() {
         images: ["/projects/web_salman.png"],
         link: "https://portfolio-salman-zeta.vercel.app/",
       },
+      {
+        title: "Hyundai Car Recommendation Website",
+        desc: "Built a personalized Hyundai car recommendation website.",
+        images: ["/projects/hymatch.png"],
+        link: "https://hymatch.vercel.app/",
+      },
     ],
     uix: [
       {
@@ -322,7 +328,7 @@ export default function Home() {
                   System Design
                 </h3>
 
-                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                   {projects.srs.map((project, i) => {
                     const key = `srs-${i}`
                     const idx = imageIndex[key] ?? 0
@@ -425,7 +431,7 @@ export default function Home() {
                 {[
                   {
                     title: "Web Development",
-                    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Node.js", "REST API"],
+                    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Node.js", "SQL", "REST API"],
                   },
                   {
                     title: "UI/UX Design",
@@ -438,6 +444,10 @@ export default function Home() {
                   {
                     title: "SDLC",
                     skills: ["Agile", "Scrum", "Waterfall", "Requirement Analysis", "Testing & QA"],
+                  },
+                  {
+                    title: "Cybersecurity",
+                    skills: ["Security Fundamentals", "Threat & Vulnerability Assessment", "Risk Mitigation", "Linux", "Python", "SIEM", "IDS"],
                   },
                 ].map((category, index) => (
                   <motion.div
@@ -502,15 +512,20 @@ export default function Home() {
                       issuer: "MySkill",
                       image: "/serti4.png",
                     },
+                    // {
+                    //   title: "French Class",
+                    //   issuer: "I Am Polyglot",
+                    //   image: "/serti5.png",
+                    // },
                     {
-                      title: "French Class",
-                      issuer: "I Am Polyglot",
-                      image: "/serti5.png",
-                    },
-                     {
                       title: "Intro Data Analytics",
                       issuer: "RevoU",
                       image: "/serti6.png",
+                    },
+                    {
+                      title: "Google Cybersecurity Certificate",
+                      issuer: "Google",
+                      image: "/serti7.png",
                     },
                   ].map((cert, i) => (
                     <motion.div
